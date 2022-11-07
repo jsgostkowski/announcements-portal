@@ -1,14 +1,17 @@
 import React from "react";
-import About from "../pages/About";
+import { Footer } from "./Footer";
 import { Navbar } from "./Navbar";
 type AppLayoutProps = {
   children: React.ReactNode;
 };
 export const Layout = ({ children }: AppLayoutProps) => {
   return (
-    <div>
-      <Navbar />
-      {children}
-    </div>
+    <>
+      <div>
+        <Navbar />
+        {children}
+        <Footer />
+      </div>
+    </>
   );
 };
